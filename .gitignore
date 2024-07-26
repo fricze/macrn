@@ -1,7 +1,6 @@
 node_modules/
 ProjectName/node_modules/
 ProjectName/ios/
-ProjectName/macos/
 ProjectName/android/
 ProjectName/app/
 public/js
