@@ -1,0 +1,18 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :deps true
+
+ :dev-http {8080 "public"}
+
+ :builds
+ {:frontend
+  {:target           :react-native
+   :js-options       {:js-package-dirs ["ProjectName/node_modules"]}
+   :init-fn          main.spred.app/init
+   :output-dir       "ProjectName/app"
+   :compiler-options {:infer-externs :auto}
+   :devtools         {:autoload true}}}}
